@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+    main {
+        width: 20vw;
+        margin-right: 70vw;
+        
+    }
+
+    input#entrar {
+        width: 280px;
+    }
+}

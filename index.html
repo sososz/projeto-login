@@ -5,18 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 <body>
     <main>
-        <section id="login">
+        <section>
             <div id="imagem">
-                Foto
+                <img src="imagens/predio-roxo-c.jpg" alt="Prédio Roxo">
             </div>
+        </section>
+        <section id="login">
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <p>Insira:</p>
                 <form action="login.php" method="post">
-                    
+                    <p>
+                        <label for="iemail"></label>
+                            <input type="email" name="iemails" id="iemail" required minlength="100" size="8" placeholder="Email">
+                    </p>
+        
+                    <p>
+                        <label for="isenha"></label>
+                            <input type="password" name="issenha" id="isenha" required minlength="8" maxlength="20" size="8" placeholder="Senha" autocomplete="current-password">
+                    </p>
+
+                    <p>
+                        <label for="ientrar"></label>
+                           <input type="submit" value="Entrar" id="entrar">
+                    </p>
+                        
+                    <p>
+                        <label for="iforget"></label>
+                            <input type="submit" value="Esqueceu a senha?" id="essenha">
+                    </p>
                 </form>
             </div>
         </section>
