@@ -41,6 +41,9 @@ section#login {
     border-color: rgba(0, 0, 0, 0.226);
     font-size: 1em;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+    transition: height, 0.3s, width, 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#formulario {
@@ -100,13 +103,6 @@ button.ientrar::after {
 button:hover {
     z-index: 0;
 }
-
-/*button.ientrar:hover {
-    color: #ffffff;
-    background-color:#232ed1;
-    box-shadow: 5px 5px 10px rgba(0, 0, 1, 0.185);
-    transition: transform .3s, border .2s;
-} */
 
 input#essenha {
     display: block;
