@@ -42,7 +42,7 @@ section#login {
     font-size: 1em;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 
-    transition: height, 0.3s, width, 0.3s;
+    transition: height, 0.2s, width, 0.2s;
     transition-timing-function: ease;
 }
 
