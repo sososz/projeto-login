@@ -57,7 +57,7 @@ section#login > div#imagem {
 
 
 input#iemail, input#isenha {
-    width: 280px;
+    width: 40vw;
     border: 2px solid rgba(0, 0, 0, 0.575);
     display: block;
     margin: auto;
@@ -74,7 +74,7 @@ input#iemail:hover, input#isenha:hover  {
 
 button.ientrar {
     border: none;
-    width: 285px;
+    width: 38vw;
     margin: auto;
     padding: 10px;
     border-radius: 1000px;
@@ -106,8 +106,8 @@ button:hover {
 
 input#essenha {
     display: block;
+    width: 20vw;
     margin: auto;
-    margin-bottom: 50px;
     border: none;
     background-color: white;
 }

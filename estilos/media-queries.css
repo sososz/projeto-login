@@ -37,13 +37,18 @@
     }
 
 
-    input#iemail, input #isenha {
+    input#iemail, input#isenha {
+        width: 30vw;
         margin: auto;
 
     }
 
-    input#entrar {
-        width: 280px;
+    button.ientrar {
+        width: 30vw;
+    }
+
+    input#essenha {
+        width: 15vw;
     }
 
     h1 {
@@ -98,6 +103,20 @@
         height: 100%;
         box-shadow: inset 5px 2px 20px -2px #000000a1;
     } 
+
+    input#iemail, input#isenha {
+        width: 18vw;
+        margin: auto;
+
+    }
+
+    button.ientrar {
+        width: 18vw;
+    }
+
+    input#essenha {
+        width: 15vw;
+    }
 
     h1 {
         margin-top: 30vh;
