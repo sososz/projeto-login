@@ -2,7 +2,7 @@
 
 /* 
    Paleta de cores
-   Azul: #0585D0 #0B2EA4
+   Azul: #0585D0 
    Roxo: #7A57BF #3939B5 232ed1
    Azul claro: #75B6DE #77B9F2
    Branco:  #FFFFFF 
@@ -21,34 +21,41 @@
     margin: 0px;
 }
 
-body {
-    background-color: #ffffff;
+body, html {
+    height: 100vh;
+    width: 100vw;
+    background-color: #77b9f217;
 }
 
-main {
-    background-color: white;
-    width: 60vw;
-    height: 55vh;
-    border: 1px solid;
-    text-align: left;
-    margin: auto;
-    margin-top: 25vh;
-    border-radius: 5px;
-    border-color: rgba(0, 0, 0, 0.226);
-    font-size: 1em;
-}
 
-div#imagem {
-    background-size: contain;
-    background-attachment: fixed;
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-0%, -50%);
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 60vw;
+    height: 55vh;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.226);
+    font-size: 1em;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-input#iemail, input#isenha{
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+section#login > div#imagem {
+    display: none;
+}
+
+
+input#iemail, input#isenha {
     width: 280px;
+    border: 2px solid rgba(0, 0, 0, 0.575);
     display: block;
     margin: auto;
     padding: 10px;
@@ -59,25 +66,47 @@ input#iemail, input#isenha{
 
 
 input#iemail:hover, input#isenha:hover  {
-    border: 2px solid #3939B5;
+    border: 2px solid #313BB6
 }
 
-input#entrar {
-    border: 1px solid rgba(0, 0, 0, 0.363);
-    width: 50vw;
-    display: block;
+button.ientrar {
+    border: none;
+    width: 285px;
     margin: auto;
     padding: 10px;
-    border-radius: 7px;
-    color: black;
+    border-radius: 1000px;
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:#0000000e;
+    background-color: rgb(75, 71, 71);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-input#entrar:hover {
+button.ientrar::after {
+    content: '';
+    position: absolute;
+    height: 122%;
+    width: 103%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #7959C8, #1231AE, #3EB2EB);
+    z-index: -1;
+
+    /* #232ed1 */
+}
+
+button:hover {
+    z-index: 0;
+}
+
+/*button.ientrar:hover {
     color: #ffffff;
     background-color:#232ed1;
-}
+    box-shadow: 5px 5px 10px rgba(0, 0, 1, 0.185);
+    transition: transform .3s, border .2s;
+} */
 
 input#essenha {
     display: block;
@@ -100,6 +129,11 @@ h1 {
 }
 
 p {
-    text-indent: 25px;
     padding: 10px;
 }
+
+p#iinsira {
+        text-align: left;
+        margin-left: 7.3vw;
+}
+

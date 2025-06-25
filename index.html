@@ -9,19 +9,19 @@
 </head>
 <body>
     <main>
-        <section>
+        <section id="container">
             <div id="imagem">
-                <img src="imagens/predio-roxo-c.jpg" alt="Prédio Roxo">
             </div>
         </section>
         <section id="login">
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Insira:</p>
+                <p id="iinsira">Insira:</p>
                 <form action="login.php" method="post">
                     <p>
                         <label for="iemail"></label>
-                            <input type="email" name="iemails" id="iemail" required minlength="100" size="8" placeholder="Email">
+                            <input type="email" name="iemails" id="iemail" required minlength="20"
+                            maxlength="100" size="8" placeholder="Email">
                     </p>
         
                     <p>
@@ -30,12 +30,11 @@
                     </p>
 
                     <p>
-                        <label for="ientrar"></label>
-                           <input type="submit" value="Entrar" id="entrar">
+                           <button type="submit" class="ientrar">Entrar</button>
                     </p>
                         
                     <p>
-                        <label for="iforget"></label>
+                        <label for="essenha"></label>
                             <input type="submit" value="Esqueceu a senha?" id="essenha">
                     </p>
                 </form>
