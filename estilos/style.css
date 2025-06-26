@@ -27,13 +27,19 @@ body, html {
     background-color: #77b9f217;
 }
 
+section#container > div#imagem {
+    display: none;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
 
 section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
     background-color: white;
     width: 80vw;
     height: 60vh;
@@ -42,45 +48,54 @@ section#login {
     font-size: 1em;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 
-    transition: height, 0.2s, width, 0.2s;
+    transform: translate(-50%, -50%);
     transition-timing-function: ease;
 }
 
-section#login > div#formulario {
-    display: block;
-    padding: 10px;
+div#formulario > p {
+    text-align: center;
+    padding: 10px; 
+    width: 37vw; 
 }
 
-section#login > div#imagem {
-    display: none;
+div#formulario > h1 {
+    text-align: center;
+    color: rgb(44, 43, 43);
+    margin-top: 50px;
+    margin-bottom: 60px;
 }
 
-
-input#iemail, input#isenha {
+div.campo > input {
     width: 40vw;
-    border: 2px solid rgba(0, 0, 0, 0.575);
+    border: 1px solid rgba(0, 0, 0, 0.575);
     display: block;
     margin: auto;
+    margin-bottom: 15px;
     padding: 10px;
     border-radius: 7px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: none;
 }
 
-
-input#iemail:hover, input#isenha:hover  {
-    border: 2px solid #313BB6
+div.campo > input:focus-within {
+    border: 1px solid #0011ff;
 }
 
-button.ientrar {
+div.campo > input:hover {
+    border: 2px solid #313BB6;
+}
+
+div.campo > button.ientrar {
     border: none;
-    width: 38vw;
+    width: 55%;
     margin: auto;
+    margin-top: 30px;
     padding: 10px;
     border-radius: 1000px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(75, 71, 71);
+    cursor: pointer;
     position: relative;
 
     display: flex;
@@ -88,7 +103,7 @@ button.ientrar {
     align-items: center;
 }
 
-button.ientrar::after {
+div.campo > button.ientrar::after {
     content: '';
     position: absolute;
     height: 122%;
@@ -100,36 +115,22 @@ button.ientrar::after {
     /* #232ed1 */
 }
 
-button:hover {
+div.campo > button:hover {
     z-index: 0;
 }
 
-input#essenha {
+form > div.campo > a.botao {
     display: block;
-    width: 35vw;
-    margin: auto;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 16px;
+    width: 100%;
     border: none;
-    background-color: white;
+    color: black;
+    background-color: transparent;
 }
 
-input#essenha:hover {
+form > div.campo a.botao:hover {
     text-decoration: underline;
     color: #0011ff;  
-}
-
-h1 {
-    padding: 10px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-p {
-    padding: 10px;
-}
-
-p#iinsira {
-        text-align: left;
-        margin-left: 7.3vw;
-}
-
+} 

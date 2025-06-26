@@ -10,10 +10,10 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-0%, -50%);
-
         width: 50vw;
         height: 100vh;
+
+        transform: translateY(-50%);
     }
 
     section#container > div#imagem {
@@ -30,69 +30,67 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-100%, -50%);
-
         width: 50vw;
         height: 100vh;
+
+        transform: translate(-100%, -50%);
     }
 
+    div#formulario > h1 {
+        font-size: 1.7em;
+        margin-top: 30vh;
+        margin-bottom: 50px;
+    }
 
-    input#iemail, input#isenha {
-        width: 30vw;
-        margin: auto;
+    div#formulario > p {
+        width: 41%;
+    }
+
+    div.campo > input {
+        width: 60%;
+        margin-bottom: 12px;
 
     }
 
-    button.ientrar {
-        width: 30vw;
-    }
-
-    input#essenha {
-        width: 15vw;
-    }
-
-    h1 {
-        padding-top: 25vh;
-    }
-
-    p#iinsira {
-        display: block;
-        margin: auto;
-        text-align: left;
-        margin-left: 7.5vw;
+    div.campo > button.ientrar {
+        margin-top: 30px;
+        width: 60%;
     }
 }
 
 @media screen and (min-width: 992px) {
-
     ::-webkit-scrollbar {
         width: 0px;
         height: 0px;
-    }
-
-    section#login {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-167%, -50%);
-
-        width: 30vw;
-        height: 100vh;
     }
 
     section#container {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-16%, -50%);
+        
+        width: 72vw;
+        height: 100vh;
+        background-image: url(../imagens/ceu-medio.jpg);
+        background-repeat: repeat;
+        background-size: contain;
+        box-shadow: none; 
 
+        transform: translate(-28%, -50%);
+    }
+
+    /* position: absolute;
+        top: 50%;
+        left: 50%;
+        
         width: 125.2vw;
         height: 100vh;
         background-image: url(../imagens/ceu-medio.jpg);
         background-repeat: repeat;
         background-size: contain;
         box-shadow: none;
-    }
+
+        transform: translate(-16%, -50%); */
 
     section#container > div#imagem {
         display: block;
@@ -105,22 +103,37 @@
         box-shadow: inset 5px 2px 20px -2px #000000a1;
     } 
 
-    input#iemail, input#isenha {
-        width: 18vw;
-        margin: auto;
+    section#login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30vw;
+        height: 100vh;
 
+        transform: translate(-167.3%, -50%);
     }
 
-    button.ientrar {
-        width: 18vw;
-    }
-
-    input#essenha {
-        width: 15vw;
-    }
-
-    h1 {
+    div#formulario > h1 {
+        font-size: 1.9em;
         margin-top: 30vh;
+        margin-bottom: 60px;
     }
 
-}
+    div#formulario > p {
+        width: 50%;
+    }
+
+    div.campo > input {
+        width: 50%;
+        height: 20px;
+        margin: auto;
+        margin-bottom: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.575);
+
+    }
+
+    div.campo > button.ientrar {
+        width: 52%;
+        margin-top: 30px;
+    }
+} 
