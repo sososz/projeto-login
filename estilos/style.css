@@ -24,7 +24,7 @@
 body, html {
     height: 100vh;
     width: 100vw;
-    background-color: #77b9f217;
+    background-color: #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -46,8 +46,8 @@ section#login {
     top: 50%;
     left: 50%;
     background-color: white;
-    width: 80vw;
-    height: 500px;
+    width: 80%;
+    height: 600px;
     border-radius: 5px;
     border-color: rgba(0, 0, 0, 0.226);
     font-size: 1em;
@@ -57,21 +57,23 @@ section#login {
     transition-timing-function: ease;
 }
 
-div#formulario > p {
-    text-align: center;
-    padding: 10px; 
-    width: 37vw; 
-}
-
 div#formulario > h1 {
     text-align: center;
     color: rgb(44, 43, 43);
-    margin-top: 50px;
+    margin-top: 15vh;
     margin-bottom: 60px;
+} 
+
+div#formulario > p {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 10px; 
+    width: 49%; 
 }
 
 div.campo > input {
     width: 40vw;
+    height: 17px;
     border: 1px solid rgba(0, 0, 0, 0.575);
     display: block;
     margin: auto;
@@ -82,9 +84,6 @@ div.campo > input {
     font-style: none;
 }
 
-div.campo > input:focus-within {
-    border: 1px solid #0011ff;
-}
 
 div.campo > input:hover {
     border: 2px solid #313BB6;
@@ -92,7 +91,7 @@ div.campo > input:hover {
 
 div.campo > button.ientrar {
     border: none;
-    width: 55%;
+    width: 53%;
     margin: auto;
     margin-top: 30px;
     padding: 10px;
@@ -100,7 +99,7 @@ div.campo > button.ientrar {
     font-size: 1em;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(75, 71, 71);
+    background-color: rgba(75, 71, 71, 0);
     cursor: pointer;
     position: relative;
 
@@ -122,8 +121,8 @@ div.campo > button.ientrar::after {
 }
 
 div.campo > button:hover {
-    z-index: 0;
-}
+    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.3);
+} 
 
 form > div.campo > a.botao {
     display: block;

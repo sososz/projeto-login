@@ -21,10 +21,10 @@
         background: #75b6de38 url(../imagens/predio-roxo.jpg) no-repeat;
         background-size: cover;
         background-position: left center;
-        height: 100vh;
+        height: 100%;
         width: 50vw;
         box-shadow: inset 5px 2px 20px -2px #000000a1;
-    }
+    } 
 
     section#login {
         position: absolute;
@@ -65,7 +65,7 @@
         top: 50%;
         left: 50%;
         
-        width: 72vw;
+        width: 73vw;
         height: 100vh;
         background-image: url(../imagens/ceu-medio.jpg);
         background-repeat: repeat;
@@ -74,19 +74,6 @@
 
         transform: translate(-28%, -50%);
     }
-
-    /* position: absolute;
-        top: 50%;
-        left: 50%;
-        
-        width: 125.2vw;
-        height: 100vh;
-        background-image: url(../imagens/ceu-medio.jpg);
-        background-repeat: repeat;
-        background-size: contain;
-        box-shadow: none;
-
-        transform: translate(-16%, -50%); */
 
     section#container > div#imagem {
         display: block;
