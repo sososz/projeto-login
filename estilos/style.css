@@ -27,6 +27,11 @@ body, html {
     background-color: #77b9f217;
 }
 
+::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+
 section#container > div#imagem {
     display: none;
 }
@@ -92,6 +97,7 @@ div.campo > button.ientrar {
     margin-top: 30px;
     padding: 10px;
     border-radius: 1000px;
+    font-size: 1em;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(75, 71, 71);
@@ -126,7 +132,7 @@ form > div.campo > a.botao {
     margin-top: 16px;
     width: 100%;
     border: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.897);
     background-color: transparent;
 }
 

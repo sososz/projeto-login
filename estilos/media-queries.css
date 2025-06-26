@@ -53,17 +53,13 @@
     }
 
     div.campo > button.ientrar {
+        font-size: 0.9em;
         margin-top: 30px;
         width: 60%;
     }
 }
 
 @media screen and (min-width: 992px) {
-    ::-webkit-scrollbar {
-        width: 0px;
-        height: 0px;
-    }
-
     section#container {
         position: absolute;
         top: 50%;
@@ -133,6 +129,7 @@
     }
 
     div.campo > button.ientrar {
+        font-size: 0.9em;
         width: 52%;
         margin-top: 30px;
     }
