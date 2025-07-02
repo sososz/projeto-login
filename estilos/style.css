@@ -17,8 +17,14 @@
 
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }
 
 body, html {
@@ -27,40 +33,43 @@ body, html {
     background-color: #ffffff;
 }
 
-::-webkit-scrollbar {
-        width: 0px;
-        height: 0px;
-    }
+body {
+    flex-flow: row nowrap;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex-flow: row nowrap;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 section#container > div#imagem {
     display: none;
 }
 
 section#login > div#formulario {
-    display: block;
-    padding: 10px;
-}
-
-section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     background-color: white;
-    width: 80%;
-    height: 600px;
+    width: 100vw;
+    height: 100vh;
     border-radius: 5px;
-    border-color: rgba(0, 0, 0, 0.226);
+    padding: 10px;
+    border-color: rgb(0, 0, 0);
     font-size: 1em;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 
-    transform: translate(-50%, -50%);
     transition-timing-function: ease;
 }
 
 div#formulario > h1 {
     text-align: center;
     color: rgb(44, 43, 43);
-    margin-top: 15vh;
+    margin-top: 20vh;
     margin-bottom: 60px;
 } 
 
@@ -68,12 +77,12 @@ div#formulario > p {
     font-family: "Poppins", sans-serif;
     text-align: center;
     padding: 10px; 
-    width: 49%; 
+    margin-right: 45vw; 
 }
 
 div.campo > input {
-    width: 40vw;
-    height: 17px;
+    width: 56%;
+    height: 45px;
     border: 1px solid rgba(0, 0, 0, 0.575);
     display: block;
     margin: auto;
@@ -102,6 +111,7 @@ div.campo > button.ientrar {
     background-color: rgba(75, 71, 71, 0);
     cursor: pointer;
     position: relative;
+    z-index: 0;
 
     display: flex;
     justify-content: center;
